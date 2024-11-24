@@ -3,7 +3,7 @@ pipeline {
     agent any // Exécute sur n'importe quel agent disponible
 
     tools {
-        jdk 'JDK17' // Nom configuré pour votre JDK dans Jenkins
+        jdk 'Java21' // Nom configuré pour votre JDK dans Jenkins
         maven 'Maven3' // Nom configuré pour Maven dans Jenkins
     }
 
