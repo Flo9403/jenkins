@@ -11,19 +11,19 @@ pipeline {
 
         stage('Build') { // Étape de compilation
             steps {
-                sh 'mvn clean install' // Exécute la commande Maven pour compiler le projet
+                bat 'mvn clean install' // Utilise une commande compatible Windows
             }
         }
 
         stage('Test') { // Étape de tests
             steps {
-                sh 'mvn test' // Exécute les tests unitaires
+                bat 'mvn test' // Utilise une commande compatible Windows pour exécuter les tests unitaires
             }
         }
 
         stage('Run') { // Étape d'exécution
             steps {
-                sh 'mvn exec:java' // Lance l'application (optionnel)
+                bat 'mvn exec:java' // Utilise une commande compatible Windows pour lancer l'application
             }
         }
 
