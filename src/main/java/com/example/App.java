@@ -6,7 +6,7 @@ public class App {
 
     public String getMessage() {
     
-        return "Hello, update Jenkins Pipeline!";
+        return "Hello, update 2 Jenkins Pipeline!";
     
     }
     
